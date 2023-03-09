@@ -1,0 +1,150 @@
+/********* General / UI *********/
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flexWrap {
+    flex-wrap: wrap;
+}
+
+.inlineList {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.justify-SB {
+    justify-content: space-between;
+}
+
+/********* HEADER **********/
+
+header {
+    background: #ff6900;
+    color: white;
+    
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+}
+
+.logo {
+    height: 30px;
+}
+
+header > nav {
+    align-items: center;
+    height: 70px;
+}
+
+.inlineList li {
+    margin: 0 1em;
+}
+
+header nav .inlineList > li > a {
+    color: white;
+}
+
+/******** MAIN CONTENT **********/
+main {
+    margin-top: 100px;
+}
+
+.card {
+    width: calc( 100% / 3 - 1em );
+    margin-bottom: 1em;
+}
+
+.cardImage {
+  position: relative;   
+}
+
+.cardImage > img {
+    width: 100%;
+}
+
+.primaryImage {
+    display: block;
+}
+.secondaryImage {
+    display: none;
+}
+
+/* EFFETTO HOVER ESERCIZIO */
+.card:hover .primaryImage {
+    display: none;
+}
+.card:hover .secondaryImage {
+    display: block;
+}
+/* FINE EFFETTO HOVER ESERCIZIO */
+
+/* EFFETTO HOVER CON OVERFLOW E TRANSFROM */
+/* PER USARLO, COMMENTARE L'HOVER PRECEDENTE */
+/* .cardImage {
+    overflow: hidden;
+}
+.primaryImage:hover {
+    transform: scale(1.5);
+} */
+/* FINE EFFETTO HOVER CON OVERFLOW E TRANSFROM */
+
+.addToWishlist {
+    position: absolute;
+    padding: 1em;
+    top: 1em;
+    right: 0px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.addToWishlist:hover {
+    color: red;
+}
+
+.cardBadges {
+    position: absolute;
+    padding: 0.3em;
+    bottom: 20%;
+    left: 0px;
+    color: white;
+    cursor: pointer;
+}
+
+.badge {
+    padding: 0.2em;
+}
+
+.badge.red {background: red;}
+.badge.green {background: greenyellow;}
+
+/********* FOOTER ********/
+
+footer {
+    background: #222;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
